@@ -12,7 +12,7 @@ var counter int64
 
 func main() {
 	var conn *zk.Conn
-	conn, _, err := zk.Connect([]string{"10.12.35.7:2181"}, time.Second)
+	conn, _, err := zk.Connect([]string{"localhost:2181"}, time.Second)
 	if err != nil {
 		panic(err)
 	}
